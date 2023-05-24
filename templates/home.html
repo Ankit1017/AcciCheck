@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Home - Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .bid
+        {
+            font-family: 'Raleway', sans-serif;
+        }
+        li
+        {
+            margin: 5px 2px;
+        }
+        #info {
+            /* background-image: url('../static/map_home_img.jpg'); */
+            background-size: 100%;
+            background-repeat: repeat-y;
+            min-height:60vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .content-title {
+            /* color: white; */
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5rem;
+            line-height: 80px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .home-para {
+            /* color: white; */
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            padding: 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #criteria
+        {
+            height:30vh;
+            background-color: black;
+        }
+        @media screen  and (max-width  : 850px){
+            .container
+            {
+                display : flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .card
+            {
+                width:55%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('index')}}">Accident Prediction</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="info">
+        <div class="content-title">
+            Realtime Area Accident Prediction
+        </div>
+        <div class="home-para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla omnis ad cupiditate. Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Tempore quasi commodi laudantium in ab sed distinctio aspernatur,
+            accusantium perspiciatis eius illo rem nobis reiciendis unde quidem nam sequi adipisci hic, sunt voluptate.
+            Deserunt earum exercitationem molestiae quibusdam nisi doloribus ut fuga? Labore recusandae fugit ut
+            veritatis in modi ab incidunt?
+        </div>
+        <section id="type_area">
+            <h2 style="text-align: center;">Area type</h2>
+            <div class="container d-flex justify-content-center">
+            <div class="container d-flex ">
+                <div class="col-md-3 d-flex flex-column mx-4 my-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../static/map_home_img.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum optio debitis cum natus tempore non magnam dolor voluptates cupiditate, qui sunt assumenda porro voluptas labore soluta repellendus quo, animi ducimus ex illum saepe!</p>
+                            <a href="#" class="btn btn-primary">Area1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column mx-4 my-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../static/map_home_img.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente cupiditate, ipsum incidunt veritatis tenetur? Numquam ex modi cupiditate mollitia laboriosam! Sit laboriosam, distinctio, totam doloribu</p>
+                            <a href="#" class="btn btn-primary">Area2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column mx-4 my-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../static/map_home_img.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, placeat. Harum impedit blanditiis quia tenetur, obcaecati ut quam itaque deserunt aut architecto dolores culpa debitis sapiente pariatur perspiciatis in rem! Eum neque asperiores dolore?</p>
+                            <a href="#" class="btn btn-primary">Area3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+    <section id="criteria d-flex">
+        <img src="../static/prediction_images.jpg" alt="" style="width:50%">
+        <div class="container" style="width:45% ; display: inline-block; height:100%" >
+            <h1>Our prediction Criterias</h1>
+            <ul>
+                <li class="bid"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cloud-lightning-rain-fill mx-5" viewBox="0 0 16 16">
+                    <path d="M2.658 11.026a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.5 1.5a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm9.5 0a.5.5 0 0 1 .316.632l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.316zm-7.105-1.25A.5.5 0 0 1 7.5 11h1a.5.5 0 0 1 .474.658l-.28.842H9.5a.5.5 0 0 1 .39.812l-2 2.5a.5.5 0 0 1-.875-.433L7.36 14H6.5a.5.5 0 0 1-.447-.724l1-2zm6.352-7.249a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973z"/>
+                  </svg>RainFall</li>
+                <li class="bid"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-snow mx-5" viewBox="0 0 16 16">
+                    <path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793V8.866l-3.4 1.963-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495L7 8 3.6 6.037l-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849L7.5 7.134V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 1 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v3.927l3.4-1.963.496-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l3.4 1.963 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-3.4-1.963v3.927l1.353 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z"/>
+                  </svg>Snowfall</li>
+                <li class="bid"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-thermometer-sun mx-5" viewBox="0 0 16 16">
+                    <path d="M5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585A1.5 1.5 0 0 1 5 12.5z"></path>
+                    <path d="M1 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM3.5 1A1.5 1.5 0 0 0 2 2.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0L5 10.486V2.5A1.5 1.5 0 0 0 3.5 1zm5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5zm4.243 1.757a.5.5 0 0 1 0 .707l-.707.708a.5.5 0 1 1-.708-.708l.708-.707a.5.5 0 0 1 .707 0zM8 5.5a.5.5 0 0 1 .5-.5 3 3 0 1 1 0 6 .5.5 0 0 1 0-1 2 2 0 0 0 0-4 .5.5 0 0 1-.5-.5zM12.5 8a.5.5 0 0 1 .5-.5h1a.5.5 0 1 1 0 1h-1a.5.5 0 0 1-.5-.5zm-1.172 2.828a.5.5 0 0 1 .708 0l.707.708a.5.5 0 0 1-.707.707l-.708-.707a.5.5 0 0 1 0-.708zM8.5 12a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"></path>
+                  </svg>Temperature</li>
+                <li class="bid"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-wind mx-5" viewBox="0 0 16 16">
+                    <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>WindSpeed</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
